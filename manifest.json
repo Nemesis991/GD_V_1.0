@@ -1,0 +1,32 @@
+{
+  "name": "D7A DASH",
+  "short_name": "GeoDash",
+  "id": "com.d7adash.game",
+  "description": "A neon-themed infinite runner platformer game.",
+  "display": "standalone",
+  "orientation": "landscape",
+  "start_url": "./",
+  "background_color": "#050510",
+  "theme_color": "#050510",
+  "categories": ["games"],
+  "icons": [
+    {
+      "src": "IMAGE.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "IMAGE.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "IMAGE.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
