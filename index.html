@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>D7A DASH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#050510">
+    <!-- Mobile App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+    <div id="splashScreen">
+        <div class="splash-content">
+            <div class="splash-cube"></div>
+            <h1>D7A DASH</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="uiLayer">
+        <div id="scoreDisplay">0</div>
+
+        <div id="pauseBtn" class="hidden">
+            <div class="pause-bar"></div>
+            <div class="pause-bar"></div>
+        </div>
+
+        <div id="pauseMenu" class="hidden">
+            <h1>ПАУЗА</h1>
+
+            <div class="customization-section">
+                <h3>Цвят на кубчето</h3>
+                <div class="color-options" id="playerColors">
+                    <button class="color-btn" style="background-color: #ffffff;" data-color="#ffffff"></button>
+                    <button class="color-btn" style="background-color: #ff00ff;" data-color="#ff00ff"></button>
+                    <button class="color-btn" style="background-color: #00ffff;" data-color="#00ffff"></button>
+                    <button class="color-btn" style="background-color: #ffff00;" data-color="#ffff00"></button>
+                    <button class="color-btn" style="background-color: #00ff00;" data-color="#00ff00"></button>
+                </div>
+            </div>
+
+            <button id="resumeBtn">Продължи</button>
+        </div>
+
+        <div id="gameOverMenu" class="hidden">
+            <h1>КЕНДЗ</h1>
+            <div class="score-recap">
+                <p>Резултат: <span id="finalScore">0</span></p>
+                <p>Най-добър: <span id="bestScore">0</span></p>
+            </div>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+
+    <div id="rotateScreen" class="hidden">
+        Please rotate your device to play
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
